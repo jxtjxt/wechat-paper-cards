@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{PAGE_TITLE}}</title>
+<style>
+:root{--paper:#F4F7F8;--ink:#203047;--accent:#C66716;--accent-pale:#F8EADC;--muted:#6B7888;--secondary:#627C94}
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1440px;overflow:hidden;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","Noto Sans SC",sans-serif}
+.card{width:1080px;height:1440px;padding:48px 66px 42px;display:grid;grid-template-rows:auto auto minmax(0,1fr);gap:18px;background:radial-gradient(ellipse at 100% 0%,var(--accent-pale),transparent 55%)}
+.topline{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:24px;letter-spacing:.02em}.role{color:var(--accent);font-weight:800}
+.title{font-size:65px;line-height:1.22;letter-spacing:-1.5px;font-weight:800;margin:4px 0 0}
+.content{min-height:0;display:flex;flex-direction:column;gap:17px;padding-top:4px}.content>*{flex-shrink:0}
+.evidence-tag{align-self:flex-start;background:var(--accent-pale);color:var(--accent);font-size:25px;font-weight:700;border-radius:9px;padding:9px 13px}
+.diagram{display:block;width:100%;height:760px}.diagram text{font-family:"Microsoft YaHei","Noto Sans SC",sans-serif}
+.key-claim{font-size:35px;line-height:1.44;padding:16px 20px;margin:0;background:var(--accent-pale);border-left:6px solid var(--accent);border-radius:0 14px 14px 0}
+.boundary{font-size:28px;line-height:1.45;padding:13px 18px;background:#E9EEF2;border-left:4px solid var(--muted);color:#4D5E72}
+.reference{font-size:23px;line-height:1.42;color:var(--muted)}
+</style></head><body><main class="card"><div class="topline"><span>{{RUNNING_TITLE}}</span><span class="role">{{ROLE}}</span></div><h1 class="title">{{TITLE}}</h1><div class="content"><div class="evidence-tag">{{TAG}}</div>{{DIAGRAM_HTML}}<div class="key-claim">{{KEY_CLAIM}}</div><div class="boundary">{{BOUNDARY}}</div><div class="reference">{{SOURCE}}</div></div></main></body></html>

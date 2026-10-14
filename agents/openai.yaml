@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文转公众号贴图"
+  short_description: "把论文或网址制作成橙色示意图卡片、短配文、离线预览与上传包"
+  default_prompt: "用 $wechat-paper-cards 将这篇论文或网址制作成沿用 PROTAC 橙色版风格的公众号贴图文章。"
